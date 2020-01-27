@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula HTML</title>
+</head>
+<body>
+    <h1  id = "topo">Primeira aula de HTML</h1> <hr>
+    <h2>Subtítulo</h2>
+    <h3>Subsubtítulo</h3>
+        <p>
+            <b>Lorem ipsum</b> dolor sit <i>amet</i> <u>consectetur</u> <u><b>adipisicing</b> elit</u>. <br>
+            Sequi laudantium autem odit pariatur? <br>
+            Tenetur <strong>dolores</strong> repudiandae corrupti? <br>
+            Ipsa impedit ab ratione suscipit esse quam, dolore aperiam fugit <em>exercitationem</em> doloremque incidunt?
+        </p>
+
+        <pre>
+            Primeira linha
+
+            Seguna linha
+
+            Terceira linha                   Fim
+        </pre>
+
+        <p>f(x) = 4x<sup>2</sup> - y<sub>1</sub></p>
+
+        <blockquote>
+            "Any fool cqn write code that a computer"
+        </blockquote>
+
+        <p>A <abbr title="National Aeronautics and Space Administration">NASA</abbr> é uma agência do governp federal dos EUA</p>
+
+        <!-- ordered list-->
+        <ol>
+            <li>Coloque o trigo, e os ovos num recipiente</li>
+            <li>Bata tudo</li>
+            <li>Leve ao forno</li>
+        </ol>
+
+        <!-- unordered list-->
+        <ul>
+            <li>Trigo</li>
+            <li>Ovos</li>
+            <li>Água morna</li>
+        </ul>
+
+        <!-- definition list-->
+        <dl>
+            <dt>Teste</dt>
+            <dd>Texto do teste</dd>
+        </dl>
+
+        <!-- nested lists-->
+        <ul>
+            <li>Home</li>
+            Sobre
+            <ul>
+                <li>História</li>
+                <li>Visão</li>
+            </ul>
+            <li>Saída</li>
+        </ul>
+
+        <a href="https://www.google.com" target="_blank" >Clique par ir para o Google</a>
+
+        <br>
+        <br>
+
+        <a href="#topo" target="_self" >Clique par ir para o topo</a>
+
+        <br>
+        <br>
+
+        <hr>
+        <br>
+        <a href="subpasta_1/sub1.html">Subpasta 1</a>
+
+        <br>
+        <a href="subpasta_1/subpasta_2/sub2.html">Subpasta 2</a>
+
+        <br>
+        <a href="./Web Front-End.pdf" download>
+            Clique para fazer o download da apostila Web Front-End
+        </a>
+
+        <br>
+        <a href="mailto:jose.euclides.de.melo.ferraz@gmail.com">
+            Envia e-mail
+        </a>
+
+        <br>
+        <br>
+        <figure>
+            <img src="images/elephant.jfif" 
+                title = "elefante" 
+                alt="Imagem de elefante "
+                width = 400
+                align = "middle">
+
+            <figcaption>Elefante</figcaption>
+        </figure>
+
+        <br>
+
+        <table border="1" cellspacing = "10" cellpadding = "10" align="center">
+            <tr bgcolor="blue">
+                <td>Código</td>
+                <td>1835179</td>
+            </tr>
+            <tr bgcolor="yellow">
+                <td>Nome</td>
+                <td>Amazon Kindle</td>
+            </tr>
+            <tr bgcolor = "red">
+                <td>Cor</td>
+                <td>Branco</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan = "4" align="center">Aulas de hoje</th>
+                </tr>
+
+                <tr>
+                    <th></th>
+                    <th>Let's Code</th>
+                    <th>Copa Coworking</th>
+                    <th>Itaú Unibanco</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>19:00-20:00</td>
+                <td rowspan="2">Web Front-End</td>
+                <td>Python Pro</td>
+                <td>UI e UX Design</td>
+            </tr>
+            <tr>
+                <td>20:30-22:00</td>
+                <td>UI e UX Design</td>
+                <td>Python imersivo</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <hr>
+
+        <form action="" method="get">
+            <label for="pesquisa">Termo de busca (get)</label>
+            <input type="text" id ="pesquisa" name="search_term" placeholder="Ex. José Carlos">
+            <br>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name ="email" placeholder = "example@example.com">
+            <br>
+            <br>
+
+            <label for="dropdown">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="">Selecione</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP" selected>São Paulo</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PR">Paraná</option>
+            </select>
+            
+            <br>
+            <br>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" list="nomes" required>
+            <datalist id="nomes">
+                <option value="Paulo">
+                <option value="Pietro">
+                <option value="Pedro">
+                <option value="Paula">
+                <option value="Lucas">
+                <option value="Luiz">
+                <option value="Ludmila">
+            </datalist>
+            <br>
+            <br>
+
+            <!-- <input type="submit" value="Enviar"> -->
+            <button type = "submit">Enviar !</button>
+        </form>
+
+        <br>
+        <br>
+        
+        <!--Para carregar arquivo-->
+        <form action="" method="post">
+            <label for="foto">Foto de perfil:</label>
+            <input type="file" id ="foto" name="foto">
+        </form>
+        
+
+        <br>
+        <br>
+        <hr>
+
+</body>
+</html>
